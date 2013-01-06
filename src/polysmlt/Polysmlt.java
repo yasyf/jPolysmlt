@@ -60,9 +60,9 @@ public class Polysmlt {
                                 if (element instanceof WAPlainText) {
                                     resultNumb++;
                                     temp = ((WAPlainText) element).getText();
-                                    if (resultNumb > 1 && !"".equals(temp)) {
-                                        if (resultNumb > 2) {
-                                            result += "\n\n";
+                                    if (!"".equals(temp)) {
+                                        if (resultNumb > 1) {
+                                            result += "\n";
                                         }
                                         result += temp;
                                         if ("(no real solutions)".equals(temp)) {
